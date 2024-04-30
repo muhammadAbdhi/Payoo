@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Payoo" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/Utama</item>
+        <item name="floatingActionButtonStyle">@style/FloatingActionButtonStyle</item>
+
+    </style>
+
+    <style name="Theme.Payoo" parent="Base.Theme.Payoo" />
+
+    <style name="Theme.Payoo.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Payoo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Payoo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    
+    <style name="FloatingActionButtonStyle" parent="Widget.Design.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/FabShapeStyle</item>
+    </style>
+    
+    <style name="FabShapeStyle" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">100%</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:shape">oval</item>
+        <item name="borderWidth">6dp</item>
+        <item name="civ_border_color">@color/Kedua</item>
+    </style>
+</resources>

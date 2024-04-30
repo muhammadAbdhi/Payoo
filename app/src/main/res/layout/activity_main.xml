@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Utama"
+    tools:context=".MainActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/btn_menu"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling" />
+    <ImageView
+        android:id="@+id/imageViewCircleGradient"
+        android:layout_width="700dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="219dp"
+        android:src="@drawable/gradient_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageViewCircle"
+        android:layout_width="669dp"
+        android:layout_height="669dp"
+        android:layout_marginTop="234dp"
+        android:src="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="50dp"
+        android:id="@+id/rv_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCircle"
+        app:spanCount="2"
+        android:padding="8dp"
+        tools:listitem="@layout/card_info"
+        tools:itemCount="8"
+        />
+
+    <TextView
+        android:id="@+id/nama_toko"
+        android:layout_width="211dp"
+        android:layout_height="51dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Query Burger"
+        android:textColor="@color/white"
+        android:layout_marginTop="12dp"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="@+id/btn_menu"
+        app:layout_constraintTop_toBottomOf="@+id/btn_menu" />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Jl. Guntung Alaban, Kab. Banjar Kalimantan Selatan"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/lokasi"
+        android:maxLines="2"
+        android:drawablePadding="11dp"
+       android:ellipsize="end"
+       app:layout_constraintStart_toStartOf="@+id/nama_toko"
+        app:layout_constraintTop_toBottomOf="@+id/nama_toko"/>
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/quicksand"
+        android:text="Setyo WS"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/profilkecil"
+        android:maxLines="2"
+        android:drawablePadding="11dp"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="@+id/alamat"
+        app:layout_constraintTop_toBottomOf="@+id/alamat"/>
+    <TextView
+        android:id="@+id/wa"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/quicksand"
+        android:text="082256078609"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/wa"
+        android:maxLines="2"
+        android:drawablePadding="11dp"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="@+id/user"
+        app:layout_constraintTop_toBottomOf="@+id/user"/>
+
+    <FrameLayout
+        android:id="@+id/profil"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_margin="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:src="@drawable/gradient_profile" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/foto_profil"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fotoardi" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/ubah_profil"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Ubah Profil"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/ubahprofil"
+        android:maxLines="2"
+        android:drawablePadding="3dp"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="@+id/profil"
+        app:layout_constraintTop_toBottomOf="@+id/profil"/>
+
+    <LinearLayout
+        android:id="@+id/status"
+        android:layout_width="84dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/status"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ubah_profil"
+        app:layout_constraintTop_toBottomOf="@+id/user">
+
+
+        <TextView
+            android:id="@+id/text_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Akun Gratis "
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:itemTextAppearance="@style/MyNavigationViewText"
+        app:itemIconPadding="8dp"
+        app:itemIconTint="@color/Utama"
+        app:itemVerticalPadding="21dp"
+        app:menu="@menu/main_menu"
+        tools:ignore="MissingConstraints" />
+</androidx.drawerlayout.widget.DrawerLayout>

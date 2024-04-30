@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:backgroundTint="#FFF8F8F8"
+    >
+    <LinearLayout
+        android:id="@+id/ra2ag783lsfu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/rii8m645xm7r"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_urutan"
+                android:textColor="#2E2E2E"
+                android:layout_marginStart="20dp"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="1"
+                />
+            <TextView
+                android:id="@+id/tv_nama_komposisi"
+                android:textColor="#2E2E2E"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text=".Roti"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/kanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp.16.800,-"
+                android:textColor="#898989"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/trash"
+                android:layout_marginEnd="20dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:scaleType="fitXY"
+                android:src="@drawable/trash" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

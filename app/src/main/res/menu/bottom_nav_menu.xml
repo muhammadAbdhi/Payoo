@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item android:id="@+id/menu_semua"
+            android:icon="@drawable/semua"
+            android:iconTint="@color/Utama"
+            android:title="Semua"
+            />
+        <item android:id="@+id/menu_favorit"
+            android:icon="@drawable/fav_fill"
+            android:iconTint="@color/Utama"
+            android:title="Favorit"
+            />
+        <item android:id="@+id/menu_Diskon"
+            android:icon="@drawable/diskon"
+            android:iconTint="@color/Utama"
+            android:title="diskon"
+            />
+        <item android:id="@+id/menu_Promo"
+            android:icon="@drawable/promo"
+            android:iconTint="@color/Utama"
+            android:title="Promo"
+            />
+
+
+</menu>

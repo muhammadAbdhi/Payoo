@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <group android:checkableBehavior="single">
+       <item android:id="@+id/menu_produk"
+           android:icon="@drawable/produk"
+           android:iconTint="@color/Utama"
+           android:title="Produk"
+           />
+       <item android:id="@+id/menu_transaksi"
+           android:icon="@drawable/transaksi"
+           android:iconTint="@color/Utama"
+           android:title="Transaksi Penjualan"
+           />
+       <item android:id="@+id/menu_laporan"
+           android:icon="@drawable/laporan2"
+           android:iconTint="@color/Utama"
+           android:title="Laporan"
+           />
+       <item android:id="@+id/menu_pengguna"
+           android:icon="@drawable/pengguna"
+           android:iconTint="@color/Utama"
+           android:title="Pengguna"
+           />
+       <item android:id="@+id/menu_pengaturan"
+           android:icon="@drawable/pengaturan"
+           android:iconTint="@color/Utama"
+           android:title="Pengaturan"
+           />
+       <item android:id="@+id/menu_info"
+           android:icon="@drawable/info"
+           android:iconTint="@color/Utama"
+           android:title="Tentang Payoo"
+           />
+   </group>
+</menu>

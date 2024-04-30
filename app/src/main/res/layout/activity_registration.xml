@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Utama"
+    tools:context=".ui.authentication.RegistrationActivity"
+    >
+
+    <FrameLayout
+        android:id="@+id/frame_layout_with_image_views"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageViewCircleGradient"
+            android:layout_width="850dp"
+            android:layout_height="850dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/gradient_circle" />
+
+        <ImageView
+            android:id="@+id/imageViewCircle"
+            android:layout_width="950dp"
+            android:layout_height="950dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/circle" />
+
+
+    </FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/judul_daftar_akun"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:text="DAFTAR AKUN PAYOO"
+        android:textColor="@color/black"
+        android:textSize="50px"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_pemilik"
+        android:layout_width="334dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_edit_text"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="nama pemilik*"
+        android:paddingLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/judul_daftar_akun" />
+
+    <EditText
+        android:id="@+id/et_no_hp"
+        android:layout_width="334dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_edit_text"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="nomor ponsel pemilik*"
+        android:paddingLeft="35dp"
+        android:textSize="12dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_pemilik" />
+
+    <EditText
+        android:id="@+id/et_sandi"
+        android:layout_width="334dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_edit_text"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="kata sandi*"
+        android:paddingLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_no_hp" />
+    <EditText
+        android:id="@+id/et_ulangi_sandi"
+        android:layout_width="334dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_edit_text"
+        android:fontFamily="@font/quicksand_bold"
+        android:hint="kata sandi*"
+        android:paddingLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_sandi" />
+
+    <Button
+        android:id="@+id/circularButton"
+        android:layout_width="334dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_btn"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="MASUK"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_ulangi_sandi"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:id="@+id/btn_google"
+        android:layout_width="334dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_btn_google"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularButton">
+
+        <ImageView
+            android:id="@+id/google"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/google" />
+
+        <TextView
+            android:id="@+id/text_google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Masuk dengan Google "
+            android:textColor="#2E2E2E"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_belum_punya_akun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="Sudah Punya Akun? Masuk"
+        android:textColor="@color/black"
+        android:layout_marginRight="45dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_google" />
+
+    <TextView
+        android:id="@+id/text_link_belum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:onClick="navigateToRegistrationPage"
+        android:text="Disini"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toEndOf="@+id/text_belum_punya_akun"
+        app:layout_constraintTop_toTopOf="@+id/text_belum_punya_akun" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

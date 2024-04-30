@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFFFF"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahKomposisiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/r0nj4xwdcktl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="34dp"
+            android:background="#FFFFFFFF"
+            android:elevation="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="23dp">
+
+            <ImageView
+                android:id="@+id/rrj344x2iwyk"
+                android:layout_width="8dp"
+                android:layout_height="17dp"
+                android:layout_marginEnd="65dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/rims8yhn4a9g"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tambah Komposisi"
+                android:textColor="#2E2E2E"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/et_nama_komposisi"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/quicksand_bold"
+            android:hint="nama komposisi*"
+            android:paddingLeft="30dp"
+            android:textSize="12dp"/>
+        <EditText
+            android:id="@+id/et_harga_komposisi"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/quicksand_bold"
+            android:hint="harga komposisi*"
+            android:paddingLeft="30dp"
+            android:textSize="12dp"/>
+
+        <EditText
+            android:id="@+id/et_stok_komposisi"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:background="@drawable/rounded_edit_text"
+            android:fontFamily="@font/quicksand_bold"
+            android:hint="stok komposisi"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/circularButton"
+        android:layout_width="280dp"
+        android:textSize="14dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_btn"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="MASUK"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

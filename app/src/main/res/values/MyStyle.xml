@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="MyNavigationViewText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16dp</item> <!-- Menyesuaikan ukuran teks -->
+        <item name="android:textColor">@color/black</item> <!-- Menyesuaikan warna teks -->
+        <item name="fontFamily">@font/quicksand_semibold</item>
+    </style>
+
+    <style name="SpinnerTextStyle" parent="@android:style/Widget.Spinner">
+        <item name="android:fontFamily">@font/quicksand_semibold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dataProdukSemua">
+
+    <fragment
+        android:id="@+id/dataProdukSemua"
+        android:name="com.example.payoo.ui.view.semua.DataProdukSemua"
+        android:label="fragment_data_produk_semua"
+        tools:layout="@layout/fragment_data_produk_semua" >
+        <action
+            android:id="@+id/action_dataProdukSemua_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.payoo.ui.view.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_diskonFragment"
+            app:destination="@id/diskonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diskonFragment"
+        android:name="com.example.payoo.ui.view.diskon.DiskonFragment"
+        android:label="fragment_diskon"
+        tools:layout="@layout/fragment_diskon" >
+        <action
+            android:id="@+id/action_diskonFragment_to_promoFragment"
+            app:destination="@id/promoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/promoFragment"
+        android:name="com.example.payoo.ui.view.promo.PromoFragment"
+        android:label="fragment_promo"
+        tools:layout="@layout/fragment_promo" />
+</navigation>

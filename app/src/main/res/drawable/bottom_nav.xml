@@ -1,0 +1,13 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/Utama"/>
+    <corners android:topLeftRadius="24dp"
+        android:topRightRadius="24dp"
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="0dp"/>
+    <stroke
+        android:width="5dp"
+        android:useLevel="true"
+        android:color="@color/Kedua"
+        android:angle="225"/>
+</shape>
